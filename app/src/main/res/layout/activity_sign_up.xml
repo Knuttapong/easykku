@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_sign_up"
     android:layout_width="match_parent"
@@ -8,25 +9,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="kku.nuttapongklaokliang.easykku.SignUpActivity">
-
-    <TextView
-        android:text="@string/SignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textSize="@dimen/h1"
-        android:textStyle="normal|bold"
-        android:layout_centerHorizontal="true" />
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/textView"
-        android:layout_above="@+id/button3"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"></LinearLayout>
+    tools:context="kku.nuttapongklaokliang.easykku.SignUpActivity"
+    android:background="@drawable/bg7">
 
     <Button
         android:text="@string/SignUp"
@@ -35,4 +19,77 @@
         android:id="@+id/button3"
         android:elevation="0dp"
         android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:text="@string/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="@dimen/h1"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/aText" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/button3"
+        android:layout_below="@+id/textView"
+        android:background="#78ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_height="@dimen/icon"
+            app:srcCompat="@drawable/question_man"
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/icon"
+            android:layout_margin="5dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_margin="5dp"
+                android:hint="Name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_margin="5dp"
+                android:hint="Phone"
+                android:inputType="number" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:layout_margin="5dp"
+                android:hint="User" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:layout_margin="5dp"
+                android:hint="Password" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
